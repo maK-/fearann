@@ -96,6 +96,10 @@ def getSubList(knownsubs, words):
 *   9. test-WORD-dev.new01.example.com
 *   10. test-dev.WORD-new01.example.com
 *   11. test-dev.new01-WORD.example.com
+*   12. WORD.new01.example.com
+*   13. WORD-dev.new01.example.com
+*   14. test-WORD.new01.example.com
+*   15. test-dev.WORD.example.com
 *   
 *   Replace any numbers already in the domain subdomain for each sub-subdomain
 *   Example: test1.example.com
