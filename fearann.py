@@ -126,6 +126,7 @@ def permutate(domain, wordlist):
                     newdash2 = dash + word
                     newdash3 = word + '-' + dash
                     newdash4 = dash + '-' + word
+                    newdash5 = word
                     bkpdash = sub.split('-')
                     for i,n in enumerate(bkpdash):
                         if dash == n:
@@ -144,6 +145,10 @@ def permutate(domain, wordlist):
                             bkpdash[i] = newdash4
                             ddoms = '-'.join(bkpdash)
                             newdashsubs.append(ddoms)
+
+                            bkpdash[i] = newdash5
+                            ddoms = '-'.join(bkpdash)
+                            newdashsubs.append(ddoms)
                     bkpdash = dashsub
                 bkpsub = nondom.split('.')
                 for i,n in enumerate(bkpsub):
@@ -158,6 +163,7 @@ def permutate(domain, wordlist):
             newsub2 = sub + word    
             newsub3 = word + '-' + sub
             newsub4 = sub + '-' + word
+            newsub5 = word
             bkpsub = nondom.split('.') 
             for i,n in enumerate(bkpsub):
                 if sub == n:
@@ -177,6 +183,11 @@ def permutate(domain, wordlist):
                     perms.append(ndomain)
 
                     bkpsub[i] = newsub4
+                    sdoms = '.'.join(bkpsub)
+                    ndomain = sdoms +'.'+ basedom
+                    perms.append(ndomain)
+
+                    bkpsub[i] = newsub5
                     sdoms = '.'.join(bkpsub)
                     ndomain = sdoms +'.'+ basedom
                     perms.append(ndomain)
