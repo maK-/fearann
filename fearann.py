@@ -167,7 +167,6 @@ def permutate(domain, wordlist):
             newsub2 = sub + word    
             newsub3 = word + '-' + sub
             newsub4 = sub + '-' + word
-            newsub5 = word
             bkpsub = nondom.split('.') 
             for i,n in enumerate(bkpsub):
                 if sub == n:
@@ -187,11 +186,6 @@ def permutate(domain, wordlist):
                     perms.append(ndomain)
 
                     bkpsub[i] = newsub4
-                    sdoms = '.'.join(bkpsub)
-                    ndomain = sdoms +'.'+ basedom
-                    perms.append(ndomain)
-
-                    bkpsub[i] = newsub5
                     sdoms = '.'.join(bkpsub)
                     ndomain = sdoms +'.'+ basedom
                     perms.append(ndomain)
