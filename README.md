@@ -11,3 +11,28 @@ A large list may take a long time,
 
 Estimates: list of **1000** subdomains = **250,000,000** permutations
 
+## Different permutations used
+
+Put a word at each position in the domain test-dev.new01.example.com
+Examples:
+ 1. WORDtest-dev.new01.example.com
+ 2. test-devWORD.new01.example.com
+ 3. testWORD-dev.new01.example.com
+ 4. test-WORDdev.new01.example.com
+ 5. test-dev.WORDnew01.example.com
+ 6. test-dev.new01WORD.example.com
+ 7. WORD-test-dev.new01.example.com
+ 8. test-dev-WORD.new01.example.com
+ 9. test-WORD-dev.new01.example.com
+ 10. test-dev.WORD-new01.example.com
+ 11. test-dev.new01-WORD.example.com
+ 12. WORD.new01.example.com
+ 13. WORD-dev.new01.example.com
+ 14. test-WORD.new01.example.com
+ 15. test-dev.WORD.example.com
+   
+Replace any numbers already in the domain subdomain for each sub-subdomain
+Example: test1.example.com
+Becomes: test[1-9].example.com, test[01-09], test[years], test[15-25]
+
+
