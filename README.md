@@ -5,7 +5,7 @@ This is a simple script to generate subdomain permutations/alterations. Goes har
 
 It can also be passed a list using the following:  **Note:** *be conscious a single subdomain can have 250k+ permutations*
 
-` ./fearann.py -s [list-of-known-subs.txt] -t [list-of-subdomains-to-permutate.txt] -o output-file.txt`
+` ./fearann.py -s [list-of-known-subs.txt] -l [list-of-subdomains-to-permutate.txt] -o output-file.txt`
 
 A large list may take a long time,
 
